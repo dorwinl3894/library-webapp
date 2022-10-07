@@ -7,7 +7,9 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-
+body {
+    background-color: #cde2df;
+}
 #title {
     font-size: 48px;
     font-family: metropolis, 'Times New Roman', Times, serif;
@@ -20,13 +22,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
 }
 
 .main-section {
     height: 100vh;
     width: 90%;
-    border: 1px black dotted;
-    /* background-color: rgb(185, 185, 185); */
     margin: 0 auto;
 
     display: flex;
@@ -34,12 +35,25 @@
     align-items: center;
     gap: 25px;
 }
+#add-book-form {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 8px 0px;
+    background-color: #b2beb4;
+}
+#form-book-pages {
+    width: 50px;
+}
 
 #add-book {
     font-size: 18px;
     width: auto;
-    padding: 15px 50px;
-    margin-top: 40px;
+    padding: 8px 40px;
+
     border: 1px solid #337266;
     border-radius: 100px;
     background: #e1eec3; 
@@ -55,20 +69,54 @@
 
 .library-grid {
     width: 100%;
-    border: dotted 1px black;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 25px;
 
 }
 
-.library-grid > div {
-    border: 1px solid;
-}
-
 /* Library book Cards  */
 .library-book {
+    background-color: rgb(241, 241, 241);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+
     display: flex;
     flex-direction: column;
     gap: 15px;
+    padding: 15px;
+}
+
+.library-book-title {
+    font-size: 24px;
+}
+.library-book-author {
+    font-size:18px;
+    color: #202020;
+}
+.library-book-pages {
+    font-size: 12px;
+    color: #424242;
+}
+
+.library-book-readToggle, .library-book-remove {
+
+    border: none;
+    border-radius: 100px;
+    padding: 10px 20px;
+}
+.library-book-readToggle {
+    background-color: #72dfcd;
+}
+.library-book-readToggle:hover {
+    background-color: #74ffe8;
+    cursor: pointer;
+}
+
+.library-book-remove {
+    border: 1px solid rgb(146, 146, 146);
+}
+.library-book-remove:hover {
+    background-color: #e78284;
+    cursor: pointer;
 }
