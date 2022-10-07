@@ -1,1 +1,9 @@
-console.log('hi');
+let myLibrary = [];
+
+function Book() {
+
+}
+
+function addBookToLibrary() {
+    
+}

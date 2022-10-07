@@ -1,3 +1,74 @@
-h1 {
-    color: red;
+@font-face {
+    font-family: metropolis;
+    src: url(Metropolis.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#title {
+    font-size: 48px;
+    font-family: metropolis, 'Times New Roman', Times, serif;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-section {
+    height: 100vh;
+    width: 90%;
+    border: 1px black dotted;
+    /* background-color: rgb(185, 185, 185); */
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+#add-book {
+    font-size: 18px;
+    width: auto;
+    padding: 15px 50px;
+    margin-top: 40px;
+    border: 1px solid #337266;
+    border-radius: 100px;
+    background: #e1eec3; 
+    background: -webkit-linear-gradient(to right, #f05053, #e1eec3);  
+    background: linear-gradient(to right, #f05053, #e1eec3); 
+
+}
+#add-book:hover {
+    cursor: pointer;
+
+    background: #e1eec3;
+}
+
+.library-grid {
+    width: 100%;
+    border: dotted 1px black;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+
+}
+
+.library-grid > div {
+    border: 1px solid;
+}
+
+/* Library book Cards  */
+.library-book {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
