@@ -67,7 +67,7 @@ body {
     background: #e1eec3;
 }
 
-.library-grid {
+#library-grid {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -89,6 +89,7 @@ body {
 
 .library-book-title {
     font-size: 24px;
+    font-family: metropolis, 'Times New Roman', Times, serif;
 }
 .library-book-author {
     font-size:18px;
@@ -119,4 +120,19 @@ body {
 .library-book-remove:hover {
     background-color: #e78284;
     cursor: pointer;
+}
+
+.BookIsRead {
+    opacity: 0.7;
+}
+.BookIsRead::before {
+    content: "";
+    display: inline;
+    background-image: url(images/checkmark.png);
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
+}
+.removedBook {
+    display: none;
 }
