@@ -90,14 +90,17 @@ body {
 .library-book-title {
     font-size: 24px;
     font-family: metropolis, 'Times New Roman', Times, serif;
+    overflow-wrap: break-word;
 }
 .library-book-author {
     font-size:18px;
     color: #202020;
+    overflow-wrap: break-word;
 }
 .library-book-pages {
     font-size: 12px;
     color: #424242;
+    overflow-wrap: break-word;
 }
 
 .library-book-readToggle, .library-book-remove {
