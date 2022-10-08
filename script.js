@@ -109,8 +109,11 @@ libraryGrid.addEventListener("click", function(event) {
         console.log(selectedBookIndex);
         console.log(selectedBook);
 
-        selectedBook.parentNode.classList.add("removedBook");
-        //myLibrary.splice(selectedBookIndex, 1);
+
+        myLibrary.splice(selectedBookIndex, 1);
+        selectedBook.parentNode.remove();
+        console.log(myLibrary);
+
     }
 });
 
